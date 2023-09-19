@@ -16,8 +16,17 @@ repositories {
 }
 
 dependencies {
+	// Spring Boot
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	
+	// Lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	
+	// Jwt
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
 }
 
 tasks.named('test') {
